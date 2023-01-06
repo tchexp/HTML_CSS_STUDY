@@ -1,0 +1,100 @@
+
+<!-- 
+    Теги могут быть парными, могут быть одиночными
+
+    h1..h6 - Заголовки
+    p - Абзацы
+
+    --------
+
+    Ссылки могут быть абсолютными и относительными
+
+    C:\home\photos\andrey.jpg - Абсолютная ссылка
+    music\3.mp3 - Относительная ссылка
+
+    ../music/3.mp3
+
+    --------
+
+    li - пункт списка
+    ul или ol - список
+
+    --------
+
+    3 типа подключения CSS
+
+    1. Вложение (используем атрибут style)
+    2. Встравивание (используем тег style)
+    3. Связывание (используем отдельный файл css)
+ -->
+
+ <!DOCTYPE html>
+ <html lang="ru">
+   <head>
+     <meta charset="UTF-8" />
+     <title>Моя первая страница</title>
+     <link rel="stylesheet" href="style.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+       rel="stylesheet"
+     />
+     <style>
+       @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+     </style>
+   </head>
+   <body style="font-family: 'Roboto', sans-serif; background-color: coral">
+     <h1>Всем привет!</h1>
+     <h2>Немного обо мне</h2>
+ 
+     <p class="blue">
+       <span style="background-color: red;"> Здесь я буду рассказывать </span>
+       <span style="background-color: green;">
+         о своих <em>достижениях</em> в области изучения <strong>HTML</strong> и
+         <strong>CSS</strong>.
+       </span>
+     </p>
+ 
+     <p class="blue">
+       Сложно ли учить <strong>HTML</strong>? Возможно.<br />
+       <!-- принудительный перенос строки -->
+       Но если приложить некоторые усилия, то
+       <strong><em>ничего сложного нет</em></strong
+       >.
+     </p>
+ 
+     <!-- ссылка -->
+     <p>
+       <a href="http://yandex.ru">Спросите у Яндекса</a>
+     </p>
+ 
+     <!-- горизонтальная линия -->
+     <hr />
+ 
+     <img
+       src="https://gbcdn.mrgcdn.ru/uploads/avatar/4633270/attachment/thumb-0db34ff19b53fef2271d8a077f357ab3.jpg"
+       alt = "ROZHA"
+     />
+     <p>картинка с абсолютной ссылкой</p>
+ 
+     <img src="img/pic.jpg" width="300" alt = "Rozha2"/>
+     <p>картинка с относительной ссылкой</p>
+ 
+     <h3>Я умею</h3>
+     <ul>
+       <!-- Маркированный список -->
+       <li>Вставлять картинки</li>
+       <li>Добавлять текст</li>
+       <li>Добавлять заголовки</li>
+     </ul>
+ 
+     <h3>Я хочу</h3>
+     <ol>
+       <!-- Нумерованный список -->
+       <li>На море</li>
+       <li>Спать</li>
+       <li>Кофе</li>
+     </ol>
+   </body>
+ </html>
