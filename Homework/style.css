@@ -1,13 +1,11 @@
 .main_image {
     border-radius: 10px;
-    width: 80%;
-    object-fit: cover;
+    width: 100%;
 }
 
 .thumb_image {
     border-radius: 10px;
     width: 80px;
-    object-fit: cover;
 }
 
 body {
