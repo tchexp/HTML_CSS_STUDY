@@ -1,0 +1,55 @@
+.main_image {
+    border-radius: 10px;
+    width: 380px;
+    object-fit: cover;
+}
+
+.thumb_image {
+    border-radius: 10px;
+    width: 80px;
+    object-fit: cover;
+}
+
+body {
+    background-color: beige;
+    font-family:  sans-serif;
+}
+
+#container {
+    max-width: 400px;
+    margin: 0 auto;
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.card {
+    /* Заливка фона */
+    background-color: white;
+
+    /* Граница */
+    border: 1px solid lightgray;
+
+    /* Отступ от границы до содержимого */
+    padding: 10px;
+    /*Закругление*/
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+
+    margin-top: 16px;
+}
+
+p {
+    font-size: 14px;
+    color: #7f8c9b;
+    line-height: 150%;
+}
+
+.card__details {
+
+    padding: 16px 8px 8px 8px;
+}
